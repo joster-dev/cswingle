@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-family: Arial;
+}
+
+@media (min-width: 576px) {
+  body {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    max-width: 1140px;
+  }
+}

@@ -1,0 +1,84 @@
+:host {
+  background-color: white;
+}
+
+.people,
+.video,
+.clay1,
+.clay3 {
+  display: flex;
+  overflow-x: auto;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.people img,
+.video iframe {
+  flex: 0 1 auto;
+  padding-right: 5px;
+  height: 300px;
+}
+
+.people img:last-child,
+.video iframe:last-child {
+  padding-right: 0;
+}
+
+.video iframe {
+  width: 500px;
+}
+
+.clay1,
+.clay2,
+.clay3 {
+  padding-bottom: 5px;
+}
+.clay1 img,
+.clay3 img {
+  height: 300px;
+}
+.clay1 img:nth-child(1) {
+  flex-grow: 3;
+  padding-right: 5px;
+}
+.clay1 img:nth-child(2) {
+  flex-grow: 1;
+}
+
+.clay2 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.clay3 img {
+  flex-grow: 1;
+  padding-right: 5px;
+}
+
+.clay3 img:last-child {
+  padding-right: 0;
+}
+
+.resume {
+  display: inline-block;
+  margin-bottom: 5px;
+  border: 1px double red;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  margin: 0;
+  padding-top: 0.67em;
+  padding-bottom: 0.67em;
+}
+
+.footer {
+  text-align: center;
+  padding: 50px 0;
+  color: white;
+  width: 100%;
+  background-image: url("https://i.imgur.com/JKpw5KX.jpg");
+}
