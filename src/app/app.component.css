@@ -2,6 +2,28 @@
   background-color: white;
 }
 
+.header h1,
+section h2 {
+  display: inline-block;
+}
+.header h4,
+section .icon {
+  float: right;
+}
+.header span {
+  padding: 0 15px;
+}
+section .icon {
+  padding-top: 30px;
+}
+
+.icon {
+  width: 2em;
+  height: 2em;
+  padding: 2px;
+  vertical-align: middle;
+}
+
 .people,
 .video,
 .clay1,
@@ -14,62 +36,24 @@
 
 .people img,
 .video iframe {
-  flex: 0 1 auto;
-  padding-right: 5px;
   height: 300px;
+  min-width: 455px;
+  padding-right: 5px;
+}
+
+.clay1 img {
+  height: 300px;
+  padding-right: 5px;
 }
 
 .people img:last-child,
+.clay1 img:last-child,
 .video iframe:last-child {
   padding-right: 0;
 }
 
-.video iframe {
-  width: 500px;
-}
-
-.clay1,
-.clay2,
-.clay3 {
-  padding-bottom: 5px;
-}
-.clay1 img,
-.clay3 img {
-  height: 300px;
-}
-.clay1 img:nth-child(1) {
-  flex-grow: 3;
-  padding-right: 5px;
-}
-.clay1 img:nth-child(2) {
-  flex-grow: 1;
-}
-
-.clay2 img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.clay3 img {
-  flex-grow: 1;
-  padding-right: 5px;
-}
-
-.clay3 img:last-child {
-  padding-right: 0;
-}
-
-.resume {
-  display: inline-block;
-  margin-bottom: 5px;
-  border: 1px double red;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: black;
-}
-
-.header {
+.header,
+.footer {
   margin: 0;
   padding-top: 0.67em;
   padding-bottom: 0.67em;
@@ -78,7 +62,5 @@
 .footer {
   text-align: center;
   padding: 50px 0;
-  color: white;
   width: 100%;
-  background-image: url("https://i.imgur.com/JKpw5KX.jpg");
 }
