@@ -1,66 +1,44 @@
-:host {
-  background-color: white;
+header,
+section,
+footer {
+  padding-top: 1.5em;
+  padding-bottom: 1em;
 }
-
-.header h1,
-section h2 {
-  display: inline-block;
-}
-.header h4,
-section .icon {
-  float: right;
-}
-.header span {
-  padding: 0 15px;
-}
-section .icon {
-  padding-top: 30px;
-}
-
-.icon {
-  width: 2em;
-  height: 2em;
-  padding: 2px;
-  vertical-align: middle;
-}
-
-.people,
-.video,
-.clay1,
-.clay3 {
+header,
+section,
+.view-box {
   display: flex;
   overflow-x: auto;
-  text-align: center;
   justify-content: space-between;
 }
+header *:nth-child(2),
+section *:nth-child(2) {
+  text-align: right;
+}
+footer {
+  text-align: center;
+}
 
-.people img,
-.video iframe {
+.view-box iframe,
+.view-box img {
   height: 300px;
+  padding-right: 10px;
+}
+.view-box iframe {
   min-width: 455px;
-  padding-right: 5px;
 }
-
-.clay1 img {
-  height: 300px;
-  padding-right: 5px;
-}
-
-.people img:last-child,
-.clay1 img:last-child,
-.video iframe:last-child {
+.view-box img:last-child,
+.view-box iframe:last-child {
   padding-right: 0;
 }
 
-.header,
-.footer {
-  margin: 0;
-  padding-top: 0.67em;
-  padding-bottom: 0.67em;
+header .icon,
+section .icon,
+footer a {
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
-.footer {
-  text-align: center;
-  padding: 50px 0;
-  width: 100%;
+footer .icons {
+  margin-bottom: 15px;
 }
