@@ -31,11 +31,7 @@
   </svg>
 </section>
 <div class="view-box">
-  <img src="https://i.imgur.com/m3i5PjR.jpg" />
-  <img src="https://i.imgur.com/wfr3o0D.jpg" />
-  <img src="https://i.imgur.com/zEsciF4.jpg" />
-  <img src="https://i.imgur.com/VjHHGqi.jpg" />
-  <img src="https://i.imgur.com/9p8QDgL.jpg" />
+  <img *ngFor="let item of people" [src]="item.src" (click)="clickImg(item)" [class.fullscreen]="item.isFullscreen" />
 </div>
 <section>
   <div class="text-md">Cinema</div>
@@ -51,7 +47,7 @@
   <iframe src="https://www.youtube.com/embed/HKwWU0PelxQ" width="455" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 <section class="profile">
-  <div class="text-md">Hire me</div>
+  <div class="text-md">Hire Me</div>
   <a class="resume" href="assets/resume.pdf" download title="Résumé">
     <svg class="document icon" viewBox="0 0 512 512">
       <g>
@@ -89,11 +85,7 @@
   </a>
 </section>
 <div class="clay1 view-box">
-  <img src="https://i.imgur.com/diuNWsH.jpg" />
-  <img src="https://i.imgur.com/L5iHsNu.jpg" />
-  <img src="https://i.imgur.com/RD1hIwp.jpg" />
-  <img src="https://i.imgur.com/opcU9Su.jpg" />
-  <img src="https://i.imgur.com/wQg2k43.png" />
+  <img *ngFor="let item of clay" [src]="item.src" (click)="clickImg(item)" [class.fullscreen]="item.isFullscreen" />
 </div>
 <footer>
   <div class="icons">
@@ -127,3 +119,5 @@
   </div>
   © Clay Swingle, 2018.
 </footer>
+
+<div *ngIf="isFullscreen" class="image-background"></div>
